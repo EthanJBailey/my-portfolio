@@ -1,0 +1,55 @@
+/* src/App.css */
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.App-header {
+  background-color: #282c34;
+  color: white;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 60px 20px;
+  margin-top: 60px; /* To prevent overlap with fixed header */
+}
+
+section h1 {
+  margin-bottom: 20px;
+}
+
+.project-grid, .tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.project-item, .tech-item {
+  text-align: center;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
